@@ -6,7 +6,7 @@ if not tree then
 	tree = repo or 'master'
 end
 if not repo then
-	repo = 'eric-wieser/computercraft-github'
+	repo = 'eerikem/computercraft-github'
 end
 
 local REPO_BASE = ('https://raw.githubusercontent.com/%s/%s/'):format(repo, tree)
@@ -69,4 +69,5 @@ end
 rewriteDofiles()
 fs.move('github.rom/github', 'github')
 print("github by Eric Wieser installed!")
+print("ARQ edition by ArqiTek")
 dofile('github')
