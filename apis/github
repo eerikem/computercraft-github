@@ -140,7 +140,7 @@ Tree.cloneTo = function(self, dest, onProgress)
 			fs.makeDir(path)
 		elseif getmetatable(item) == Blob then
 			local data = http.get(
-				('https://raw.github.com/%s/%s/%s/%s'):format(
+				('https://raw.githubusercontent.com/%s/%s/%s/%s'):format(
 					self.repo.user, self.repo.name, self.sha,
 					encodeURI(gitpath)
 				)
